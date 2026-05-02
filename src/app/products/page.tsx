@@ -31,17 +31,12 @@ const categories = [
     items: [
       "CNC車床加工",
       "CNC銑床加工（加工中心機）",
-      "數值控制成形研磨",
       "放電加工（線切割・放電火花加工）",
-      "光學曲線研磨",
       "CNC研磨加工",
-      "雕刻・雷射刻印",
       "熱處理",
       "表面處理（鍍膜・硬化）",
       "沖壓・板金加工",
       "粉末冶金",
-      "金屬粉末射出成型（MIM）",
-      "3D列印打樣服務",
       "試作・少量生產快速提案",
     ],
   },
@@ -74,7 +69,7 @@ export default function ProductsPage() {
               加工品目
             </h1>
             <p className="text-lg text-[var(--color-accent)] font-medium mb-2">
-              「１個起訂，零件製造」
+              精密金屬零件加工專家
             </p>
             <p className="text-[var(--color-text-secondary)]">
               從1個零件開始，滿足您多樣化的加工需求
