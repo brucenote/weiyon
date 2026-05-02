@@ -65,7 +65,7 @@ export default function GalleryPage() {
                     <ImageIcon className="w-12 h-12 text-[var(--color-accent)] opacity-20" />
                   </div>
                   <div className="absolute inset-0 bg-[var(--color-primary)]/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white text-sm font-medium">View Details</span>
+                    <span className="text-white text-sm font-medium">查看詳情</span>
                   </div>
                 </div>
                 <div className="mt-3">
