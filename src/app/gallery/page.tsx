@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "製作実績 | 偉勇工業社",
+  title: "實績展示 | 偉勇工業社",
   description: "偉勇工業社多年來的精密加工成果，展示半導體設備、航太零件、汽車配件等各類型產品案例",
 };
 
@@ -48,7 +48,7 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl lg:text-4xl font-bold text-[var(--color-primary)] mb-2">
-              製作実績
+              實績展示
             </h1>
           </div>
         </div>
