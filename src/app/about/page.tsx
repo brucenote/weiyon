@@ -125,7 +125,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
               成為兩岸三地最專業的精密金屬零件製造夥伴，
-              以技术创新和品质承诺，推动客户产品商业化成功。
+              以技術創新和品質承諾，推動客戶產品商業化成功。
             </p>
             <div className="mt-8 grid grid-cols-3 gap-8">
               <div className="text-center">
