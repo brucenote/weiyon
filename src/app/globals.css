@@ -2,53 +2,53 @@
 
 /* Weiyon Brand Colors - Professional Industrial Style */
 :root {
-  /* Primary Colors */
-  --background: #ffffff;
-  --foreground: #333333;
+  /* Base Colors */
+  --bg: #ffffff;
+  --ink: #333333;
+  --accent: #d4a84b;
 
-  /* Brand Colors */
-  --color-primary: #1a1a1a;
-  --color-secondary: #4a4a4a;
-  --color-accent: #d4a84b;
+  /* Primary Colors */
+  --primary: #1a1a1a;
+  --secondary: #4a4a4a;
 
   /* Surface Colors */
-  --color-surface: #f5f5f5;
-  --color-surface-elevated: #ffffff;
+  --surface: #f5f5f5;
+  --surface-elevated: #ffffff;
 
   /* Text Colors */
-  --color-text-primary: #333333;
-  --color-text-secondary: #666666;
-  --color-text-muted: #999999;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
 
   /* Border Colors */
-  --color-border: #e5e5e5;
-  --color-border-strong: #d4d4d4;
+  --border: #e5e5e5;
+  --border-strong: #d4d4d4;
 
   /* Semantic Colors */
-  --color-success: #22c55e;
-  --color-error: #ef4444;
+  --success: #22c55e;
+  --error: #ef4444;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
-  --color-surface: var(--color-surface);
-  --color-surface-elevated: var(--color-surface-elevated);
-  --color-text-primary: var(--color-text-primary);
-  --color-text-secondary: var(--color-text-secondary);
-  --color-text-muted: var(--color-text-muted);
-  --color-border: var(--color-border);
-  --color-border-strong: var(--color-border-strong);
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 

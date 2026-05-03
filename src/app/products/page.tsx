@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "加工品目 | 偉勇工業社",
-  description: "偉勇工業社提供多樣化的精密金屬零件加工服務，從1個零件開始，包含半導體設備、航太零件、自動化組件等專業加工",
+  description: "偉勇工業社提供多樣化的精密金屬零件加工服務，包含半導體設備、航太零件、自動化組件等專業加工",
 };
 
 const categories = [
@@ -59,16 +59,16 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-20 lg:pt-24 py-12 lg:py-16 bg-[var(--color-surface)]">
+      <section className="pt-20 lg:pt-24 py-12 lg:py-16 bg-[var(--surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl lg:text-4xl font-bold text-[var(--color-primary)] mb-4">
+            <h1 className="text-3xl lg:text-4xl font-bold text-[var(--primary)] mb-4">
               加工品目
             </h1>
-            <p className="text-lg text-[var(--color-accent)] font-medium mb-2">
+            <p className="text-lg text-[var(--accent)] font-medium mb-2">
               精密金屬零件加工專家
             </p>
-            <p className="text-[var(--color-text-secondary)]">
+            <p className="text-[var(--text-secondary)]">
               從1個零件開始，滿足您多樣化的加工需求
             </p>
           </div>
@@ -76,19 +76,19 @@ export default function ProductsPage() {
       </section>
 
       {/* Categories Grid */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16 bg-[var(--bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {categories.map((category) => (
               <div key={category.title}>
-                <h2 className="text-xl font-bold text-[var(--color-primary)] mb-6 pb-2 border-b-2 border-[var(--color-accent)]">
+                <h2 className="text-xl font-bold text-[var(--primary)] mb-6 pb-2 border-b-2 border-[var(--accent)]">
                   {category.title}
                 </h2>
                 <ul className="space-y-3">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 bg-[var(--color-accent)] rounded-full flex-shrink-0 mt-2" />
-                      <span className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
+                      <span className="w-1.5 h-1.5 bg-[var(--accent)] rounded-full flex-shrink-0 mt-2" />
+                      <span className="text-[var(--text-secondary)] text-sm leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -101,17 +101,17 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-[var(--color-surface)]">
+      <section className="py-12 lg:py-16 bg-[var(--surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
+          <h2 className="text-2xl font-bold text-[var(--primary)] mb-4">
             估價・諮詢
           </h2>
-          <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto mb-6">
+          <p className="text-[var(--text-secondary)] max-w-xl mx-auto mb-6">
             歡迎隨時諮詢。我們會根據圖面、形狀、數量、材料等提供最好的解決方案。
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-primary)] text-white font-medium rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--primary)] text-[var(--bg)] font-medium rounded-lg hover:bg-[var(--secondary)] transition-colors"
           >
             聯絡我們
           </a>

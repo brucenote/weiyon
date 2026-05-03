@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-20 lg:pt-24 min-h-[90vh] flex items-center bg-gradient-to-b from-[var(--color-surface)] to-white overflow-hidden">
+      <section className="relative pt-20 lg:pt-24 min-h-[90vh] flex items-center bg-gradient-to-b from-[var(--surface)] to-[var(--bg)] overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -17,18 +17,18 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Hero Content */}
             <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[var(--color-accent)]/10 text-[var(--color-accent)] text-sm font-medium rounded-full mb-6">
-                <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full"></span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[var(--accent)]/10 text-[var(--accent)] text-sm font-medium rounded-full mb-6">
+                <span className="w-2 h-2 bg-[var(--accent)] rounded-full"></span>
                 深耕產業 40 年
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] tracking-tight leading-tight mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--primary)] tracking-tight leading-tight mb-6">
                 精密金屬零件
                 <br />
-                <span className="text-[var(--color-accent)]">加工專家</span>
+                <span className="text-[var(--accent)]">加工專家</span>
               </h1>
 
-              <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+              <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                 從傳統金屬零件到尖端半導體設備、航太零件，我們以卓越的 CNC 精密加工技術，
                 成就您的創新設計。
               </p>
@@ -36,14 +36,14 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-primary)] text-white font-medium rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--primary)] text-[var(--bg)] font-medium rounded-lg hover:bg-[var(--secondary)] transition-colors"
                 >
                   取得報價
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/products"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[var(--color-border-strong)] text-[var(--color-text-primary)] font-medium rounded-lg hover:bg-[var(--color-surface)] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[var(--border-strong)] text-[var(--text-primary)] font-medium rounded-lg hover:bg-[var(--surface)] transition-colors"
                 >
                   了解服務項目
                 </Link>
@@ -52,24 +52,24 @@ export default function Home() {
 
             {/* Hero Image Placeholder */}
             <div className="relative lg:pl-8">
-              <div className="aspect-square max-w-md mx-auto lg:max-w-none rounded-2xl bg-gradient-to-br from-[var(--color-surface)] to-white border border-[var(--color-border)] overflow-hidden">
+              <div className="aspect-square max-w-md mx-auto lg:max-w-none rounded-2xl bg-gradient-to-br from-[var(--surface)] to-[var(--bg)] border border-[var(--border)] overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <Cog className="w-24 h-24 text-[var(--color-accent)] mx-auto mb-4 opacity-20" />
-                    <p className="text-[var(--color-text-muted)] text-sm">產品/工廠圖片</p>
+                    <Cog className="w-24 h-24 text-[var(--accent)] mx-auto mb-4 opacity-20" />
+                    <p className="text-[var(--text-muted)] text-sm">產品/工廠圖片</p>
                   </div>
                 </div>
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-4 -left-4 lg:left-8 bg-white rounded-xl shadow-lg p-4 border border-[var(--color-border)]">
+              <div className="absolute -bottom-4 -left-4 lg:left-8 bg-[var(--bg)] rounded-xl shadow-lg p-4 border border-[var(--border)]">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-[var(--color-accent)]/10 rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-[var(--color-accent)]" />
+                  <div className="w-12 h-12 bg-[var(--accent)]/10 rounded-lg flex items-center justify-center">
+                    <Award className="w-6 h-6 text-[var(--accent)]" />
                   </div>
                   <div>
-                    <p className="font-bold text-[var(--color-primary)]">40+ 年</p>
-                    <p className="text-xs text-[var(--color-text-muted)]">產業經驗</p>
+                    <p className="font-bold text-[var(--primary)]">40+ 年</p>
+                    <p className="text-xs text-[var(--text-muted)]">產業經驗</p>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-[var(--color-primary)]">
+      <section className="py-12 bg-[var(--primary)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -89,7 +89,7 @@ export default function Home() {
               { label: "產品種類", value: "1000+" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-2xl lg:text-4xl font-bold text-[var(--color-accent)] mb-1">
+                <p className="text-2xl lg:text-4xl font-bold text-[var(--accent)] mb-1">
                   {stat.value}
                 </p>
                 <p className="text-sm text-gray-400">{stat.label}</p>
@@ -100,13 +100,13 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-[var(--bg)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--color-primary)] mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary)] mb-4">
               專業服務項目
             </h2>
-            <p className="text-[var(--color-text-secondary)] max-w-2xl mx-auto">
+            <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
               提供從傳統加工到高科技領域的全面解決方案
             </p>
           </div>
@@ -146,15 +146,15 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="group p-6 lg:p-8 bg-[var(--color-surface)] rounded-xl border border-transparent hover:border-[var(--color-accent)] hover:bg-white transition-all duration-300"
+                className="group p-6 lg:p-8 bg-[var(--surface)] rounded-xl border border-transparent hover:border-[var(--accent)] hover:bg-[var(--bg)] transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-[var(--color-accent)]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[var(--color-accent)]/20 transition-colors">
-                  <service.icon className="w-6 h-6 text-[var(--color-accent)]" />
+                <div className="w-12 h-12 bg-[var(--accent)]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[var(--accent)]/20 transition-colors">
+                  <service.icon className="w-6 h-6 text-[var(--accent)]" />
                 </div>
-                <h3 className="font-bold text-lg text-[var(--color-primary)] mb-2">
+                <h3 className="font-bold text-lg text-[var(--primary)] mb-2">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 text-[var(--color-accent)] font-medium hover:underline"
+              className="inline-flex items-center gap-2 text-[var(--accent)] font-medium hover:underline"
             >
               查看所有服務
               <ArrowRight className="w-4 h-4" />
@@ -174,26 +174,26 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-16 lg:py-24 bg-[var(--color-surface)]">
+      <section className="py-16 lg:py-24 bg-[var(--surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-[var(--color-primary)] mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[var(--primary)] mb-6">
                 40 年傳承
                 <br />
-                <span className="text-[var(--color-accent)]">專業品質</span>
+                <span className="text-[var(--accent)]">專業品質</span>
               </h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6">
+              <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
                 我們是深耕產業 40 年的金屬零件製造專家，憑藉卓越的 CNC 精密加工技術，
                 致力於為全球客戶提供高品質的製造解決方案。
               </p>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8">
+              <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
                 除傳統的金屬零件、氣壓缸及汽車配件外，我們更將技術觸角延伸至尖端科技領域，
                 提供半導體設備零件、機器人自動化組件以及無人機關鍵航太零件的專業加工服務。
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-primary)] text-white font-medium rounded-lg hover:bg-[var(--color-secondary)] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-[var(--bg)] font-medium rounded-lg hover:bg-[var(--secondary)] transition-colors"
               >
                 了解更多
                 <ArrowRight className="w-4 h-4" />
@@ -201,9 +201,9 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="aspect-video rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] overflow-hidden">
+              <div className="aspect-video rounded-xl bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white/50 text-sm">公司/工廠圖片</span>
+                  <span className="text-[var(--bg)]/50 text-sm">公司/工廠圖片</span>
                 </div>
               </div>
             </div>
@@ -212,9 +212,9 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-[var(--color-primary)]">
+      <section className="py-16 lg:py-24 bg-[var(--primary)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[var(--bg)] mb-4">
             準備好開始您的專案了嗎？
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto mb-8">
@@ -223,14 +223,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--color-accent)] text-[var(--color-primary)] font-medium rounded-lg hover:bg-[var(--color-accent)]/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--accent)] text-[var(--primary)] font-medium rounded-lg hover:bg-[var(--accent)]/90 transition-colors"
             >
               聯絡我們
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
               href="tel:0423356451"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white/20 text-white font-medium rounded-lg hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[var(--bg)]/20 text-[var(--bg)] font-medium rounded-lg hover:bg-[var(--bg)]/10 transition-colors"
             >
               <Phone className="w-4 h-4" />
               04-23356451
